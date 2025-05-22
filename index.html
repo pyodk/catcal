@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+    /\_/\  
+   ( o.o ) 
+    > ^ <  CatCal - A Cat-themed Calendar
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatCal - Cat-themed Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CatCal 🐱</h1>
+            <div class="month-navigation">
+                <button id="prev-month">Previous</button>
+                <h2 id="current-month-year">May 2025</h2>
+                <button id="next-month">Next</button>
+            </div>
+        </header>
+        
+        <div class="calendar">
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div id="days-grid" class="days">
+                <!-- Calendar days will be inserted here by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="cat-fact-container">
+            <h3>Cat Fact of the Day</h3>
+            <p id="cat-fact">Cats have five toes on their front paws, but only four on the back.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
